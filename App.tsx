@@ -1,45 +1,72 @@
 /**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
+ * Copyright (c) MDG 2025.
  */
 
-import { NewAppScreen } from '@react-native/new-app-screen';
-import { StatusBar, StyleSheet, useColorScheme, View } from 'react-native';
-import {
-  SafeAreaProvider,
-  useSafeAreaInsets,
-} from 'react-native-safe-area-context';
+/**
+ * Imports
+ */
+import { Component, ReactNode } from 'react';
+// import { NavigableAppContainer } from './app/navigation/NavigableAppContainer';
+import React from 'react';
+import { StatusBar, Text } from 'react-native';
 
-function App() {
-  const isDarkMode = useColorScheme() === 'dark';
+/**
+ * Props
+ */
+interface Props {}
 
-  return (
-    <SafeAreaProvider>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <AppContent />
-    </SafeAreaProvider>
-  );
-}
+/**
+ * State
+ */
+interface State {}
 
-function AppContent() {
-  const safeAreaInsets = useSafeAreaInsets();
+/**
+ * App Screen
+ */
+export default class App extends Component<Props, State> {
+  /**
+   * Constructor
+   * @param props
+   */
+  constructor(props: Props) {
+    super(props);
 
-  return (
-    <View style={styles.container}>
-      <NewAppScreen
-        templateFileName="App.tsx"
-        safeAreaInsets={safeAreaInsets}
-      />
-    </View>
-  );
-}
+    console.log('App::Constructor');
+  } // End of constructor()
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
+  /**
+   * on Mount
+   */
+  public componentDidMount() {
+    console.log('App::componentDidMount');
+  } // End of componentDidMount()
 
-export default App;
+  /**
+   * on UnMount
+   */
+  public componentWillUnmount() {
+    console.log('App::componentWillUnmount');
+  } // End of componentWillUnmount()
+
+  // ===================================================================== //
+  // ==================== <<<<< Render Methods >>>>> ===================== //
+  // ===================================================================== //
+
+  /**
+   * Render: Main
+   * @returns ReactNode
+   */
+  public render(): ReactNode {
+    return (
+      <>
+        <StatusBar
+          barStyle={'dark-content'}
+          backgroundColor={'black'}
+        ></StatusBar>
+        <Text>MDG Mobile App</Text>
+        {/* <NavigableAppContainer /> */}
+      </>
+    );
+  } // End of render()
+} // End of class()
+// End of file
