@@ -1,6 +1,7 @@
-# MDG Mobile Project <span style="font-size:0.4em">&copy;MDG2025</span>
+# MDG Mobile Application <span style="font-size:0.4em">&copy;MDG2025</span>
 
 Environment Versions
+
 ```
 - Android 14, 16
 - choco 2.5.1
