@@ -63,7 +63,7 @@ export default class App extends Component<Props, State> {
           barStyle={'dark-content'}
           backgroundColor={'black'}
         ></StatusBar>
-        <Text>MDG Mobile App</Text>
+        <Text>MDG Mobile Application</Text>
         {/* <NavigableAppContainer /> */}
       </>
     );
