@@ -22,5 +22,8 @@ export const images = Object.freeze({
 
   // Peeps
   ec_yellow_comic: require('./images/ec-yellow-comic.jpg'),
-  mdg_bald: require('./images/mdg-bald.jpg')
+  mdg_bald: require('./images/mdg-bald.jpg'),
+
+  // Logos
+  logo_transparent: require('./images/logo-transparent.png'),
 });
