@@ -44,7 +44,7 @@ export function NavigableAppContainer() {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName={'GameSplash'}
+        initialRouteName={'Home'}
         screenOptions={{ headerShown: false }}>
         <Stack.Screen
           name={'Home'}
