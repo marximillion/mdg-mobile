@@ -10,7 +10,8 @@ import { Component, ReactNode } from 'react';
 import React from 'react';
 import { ImageBackground, StatusBar, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context'
-import { GlobalStyles, REM } from './app/components/styles/GlobalStyles';
+import { GlobalStyles } from './app/styles/GlobalStyles';
+import { REM } from './app/styles/scale';
 
 /**
  * Props

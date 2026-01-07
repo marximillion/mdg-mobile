@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { REM } from './size';
 
 export const GlobalStyles = StyleSheet.create({
   // Common
@@ -10,6 +11,11 @@ export const GlobalStyles = StyleSheet.create({
   },
 
   // Screen Container Styles
+  safeAreaView: {
+    flex: 1,
+    // paddingTop: 3 * REM,
+    paddingHorizontal: 1 * REM,
+  },
   safeAreaContainer: {
     alignItems: 'center',
     backgroundColor: '#bad1f5',
