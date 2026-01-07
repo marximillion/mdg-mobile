@@ -2,13 +2,17 @@
 
 #### MDG-MOBILE updates
 ```
+TODO-1: Create ScreenContainer (Need to implement SafeArea for consistent screen styling) - Transferred styling fromm MDG-v2
+TODO-2: Set up navigation (NavigableAppContainer & StackParamList) - COMPLETE
+TODO-3: Remove render logic from here and move into its own screen component - COMPLETE
+
 Upgrade Process - 01-06-2026
 1. Update project dependencies [COMPLETE]
-2. Transfer asset files
-3. Transfer componenet files
-4. Transfer lib files
-5. Transfer navigation files
-6. Transfer style files
+2. Transfer asset files [COMPLETE]
+3. Transfer componenet files [COMPLETE]
+4. Transfer lib files [COMPLETE]
+5. Transfer navigation files [COMPLETE]
+6. Transfer style files [COMPLETE]
 ```
 
 #### MDG-v2 updates
