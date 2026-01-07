@@ -118,12 +118,13 @@ export default class HomeScreen extends Component<Props, State> {
   public render(): ReactNode {
     console.log('HomeScreen::render');
     return (
-      <ScreenContainer withImageBackground={true}
-      >
+      <ScreenContainer withImageBackground={true}>
         <ScrollView showsVerticalScrollIndicator={false}
           contentContainerStyle={styles.container}
         >
-          <ImageBackground style={styles.bannerContainer} resizeMode='contain' source={images.logo_transparent} />
+          <ImageBackground style={styles.bannerContainer} resizeMode='contain' source={images.logo_v1} />
+          <ImageBackground style={styles.bannerContainer} resizeMode='contain' source={images.logo_v2} />
+          <ImageBackground style={styles.bannerContainer} resizeMode='contain' source={images.logo_v3} />
 
           <Button
             styleText={'sm'}
@@ -216,7 +217,7 @@ const styles = StyleSheet.create({
     // backgroundColor: 'beige',
     borderRadius: 1 * REM,
     // borderWidth: 2,
-    height: 6 * REM,
+    height: 8 * REM,
     width: '100%',
   },
 

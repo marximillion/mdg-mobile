@@ -25,5 +25,7 @@ export const images = Object.freeze({
   mdg_bald: require('./images/mdg-bald.jpg'),
 
   // Logos
-  logo_transparent: require('./images/logo-transparent.png'),
+  logo_v1: require('./images/logos/lab3-logo-v1.png'),
+  logo_v2: require('./images/logos/lab3-logo-v2.png'),
+  logo_v3: require('./images/logos/lab3-logo-v3.png'),
 });
