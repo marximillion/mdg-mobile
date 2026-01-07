@@ -8,13 +8,14 @@
 import Button from '../common/Button';
 import { Component, ReactNode } from 'react';
 import { GlobalStyles } from '../../styles/GlobalStyles';
-import { Image, StyleSheet, TouchableOpacity, View } from 'react-native';
+import { Image, ImageBackground, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { images } from '../../assets/images';
 import { RouteProp } from '@react-navigation/native';
 import ScreenContainer from '../common/ScreenContainer';
 import { ScrollView } from 'react-native-gesture-handler';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { StackParamList } from '../../navigation/StackParamList';
+import { REM } from '../../styles/scale';
 
 /**
  * Props
@@ -122,6 +123,8 @@ export default class HomeScreen extends Component<Props, State> {
         <ScrollView showsVerticalScrollIndicator={false}
           contentContainerStyle={styles.container}
         >
+          <ImageBackground style={styles.bannerContainer} resizeMode='contain' source={images.logo_transparent} />
+
           <Button
             styleText={'sm'}
             title={'WELCOME'}
@@ -147,6 +150,26 @@ export default class HomeScreen extends Component<Props, State> {
             onPress={this.navigateGameSplash}
             style={styles.familyFeudButton}
           />
+
+          <TouchableOpacity onPress={() => { }}>
+            <Text style={styles.contentTitle}>
+              <Text style={styles.h}>H</Text>
+              <Text style={styles.a}>A</Text>
+              <Text style={styles.p}>P</Text>
+              <Text style={styles.p}>P</Text>
+              <Text style={styles.y}>Y</Text>
+              <Text style={styles.space}> </Text>
+              <Text style={styles.b}>B</Text>
+              <Text style={styles.i}>I</Text>
+              <Text style={styles.r}>R</Text>
+              <Text style={styles.t}>T</Text>
+              <Text style={styles.h}>H</Text>
+              <Text style={styles.d}>D</Text>
+              <Text style={styles.a}>A</Text>
+              <Text style={styles.y}>Y</Text>
+            </Text>
+          </TouchableOpacity>
+
           {/* TODO: Create an ImageTile (withOptions if its pressable) */}
           <View style={styles.imageTile}>
             <Image
@@ -188,6 +211,15 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     // alignItems: 'center',
   },
+
+  bannerContainer: {
+    // backgroundColor: 'beige',
+    borderRadius: 1 * REM,
+    // borderWidth: 2,
+    height: 6 * REM,
+    width: '100%',
+  },
+
   imageTile: {
     // backgroundColor: 'white',
     borderRadius: 50,
@@ -200,5 +232,59 @@ const styles = StyleSheet.create({
   familyFeudButton: {
     backgroundColor: 'red',
     borderWidth: 3,
-  }
+  },
+
+  /**
+   * Text
+   */
+  contentTitle: {
+    backgroundColor: '#0c1b7d',
+    borderWidth: 3,
+    borderRadius: 1.5 * REM,
+    fontSize: 50,
+    textAlign: 'center'
+  },
+  h: {
+    color: '#FF6347', // Tomato color
+    fontWeight: 'bold',
+    fontSize: 45,
+  },
+  a: {
+    color: '#32CD32', // LimeGreen color
+    fontSize: 50,
+  },
+  p: {
+    color: '#1E90FF', // DodgerBlue color
+    fontSize: 55,
+  },
+  y: {
+    color: '#FFD700', // Gold color
+    fontSize: 60,
+    fontStyle: 'italic',
+  },
+  space: {
+    fontSize: 40, // Same size for spacing
+  },
+  b: {
+    color: '#8A2BE2', // BlueViolet color
+    fontSize: 55,
+    fontWeight: '600',
+  },
+  i: {
+    color: '#FF1493', // DeepPink color
+    fontSize: 50,
+  },
+  r: {
+    color: '#FF4500', // OrangeRed color
+    fontSize: 50,
+    fontWeight: 'bold',
+  },
+  t: {
+    color: '#ADFF2F', // GreenYellow color
+    fontSize: 55,
+  },
+  d: {
+    color: '#00BFFF', // DeepSkyBlue color
+    fontSize: 55,
+  },
 });
