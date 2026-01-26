@@ -1,15 +1,14 @@
 /**
- * Copyright © 2025 - MJDG
+ * Copyright © MJDG 2026
  */
 
 /**
  * Imports
  */
 import { Component, ReactNode } from 'react';
-import React from 'react';
-import { LogBox, StatusBar, StyleSheet } from 'react-native';
-import { REM } from './app/styles/scale';
 import { NavigableAppContainer } from './app/navigation/NavigableAppContainer';
+import React from 'react';
+import { StatusBar } from 'react-native';
 
 /**
  * Props
@@ -33,9 +32,7 @@ export default class App extends Component<Props, State> {
   constructor(props: Props) {
     super(props);
 
-    console.log('App::Constructor');
-
-    LogBox.ignoreLogs(['InteractionManager has been deprecated']);
+    console.log('App::constructor');
   } // End of constructor()
 
   /**
@@ -58,12 +55,6 @@ export default class App extends Component<Props, State> {
 
   /**
    * Render: Main
-   * TODO-4: Configure file formatting (eslint, prettier, custom?)
-   * TODO-5: Set up themeing (dark mode, light mode, custom themes?)
-   * TODO-6: Android app icons
-   * TODO-7: iOS app icons
-   * TODO-8: Lottie splash screen animation
-   * TODO-9: Update copyright to 2026
    * @returns ReactNode
    */
   public render(): ReactNode {
