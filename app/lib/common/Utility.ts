@@ -1,4 +1,8 @@
 /**
+ * Copyright © MJDG 2026
+ */
+
+/**
  * Utility Functions
  */
 

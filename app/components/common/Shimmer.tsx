@@ -1,3 +1,7 @@
+/**
+ * Copyright © MJDG 2026
+ */
+
 import React from 'react';
 import { Dimensions } from 'react-native';
 import Svg, { Rect, Defs, LinearGradient, Stop } from 'react-native-svg';

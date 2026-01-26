@@ -1,6 +1,16 @@
+/**
+ * Copyright © MJDG 2026
+ */
+
+/**
+ * Imports
+ */
 import { StyleSheet } from 'react-native';
 import { REM } from './size';
 
+/**
+ * Global Styles
+ */
 export const GlobalStyles = StyleSheet.create({
   // Common
   marginTop: {

@@ -1,5 +1,5 @@
 /**
- * Copyright (c) MJDG 2025.
+ * Copyright © MJDG 2026
  */
 
 /**

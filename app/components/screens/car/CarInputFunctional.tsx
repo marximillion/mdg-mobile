@@ -1,3 +1,7 @@
+/**
+ * Copyright © MJDG 2026
+ */
+
 import {
   Alert,
   StyleSheet,

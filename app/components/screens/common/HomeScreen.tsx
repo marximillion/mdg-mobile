@@ -1,21 +1,21 @@
 /**
- * Copyright (c) MJDG 2025.
+ * Copyright © MJDG 2026
  */
 
 /**
  * Imports
  */
-import Button from '../common/Button';
+import Button from '../../common/Button';
 import { Component, ReactNode } from 'react';
-import { GlobalStyles } from '../../styles/GlobalStyles';
+import { GlobalStyles } from '../../../styles/GlobalStyles';
 import { Image, ImageBackground, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
-import { images } from '../../assets/images';
+import { images } from '../../../assets/images';
 import { RouteProp } from '@react-navigation/native';
-import ScreenContainer from '../common/ScreenContainer';
+import ScreenContainer from '../../common/ScreenContainer';
 import { ScrollView } from 'react-native-gesture-handler';
 import { StackNavigationProp } from '@react-navigation/stack';
-import { StackParamList } from '../../navigation/StackParamList';
-import { REM } from '../../styles/scale';
+import { StackParamList } from '../../../navigation/StackParamList';
+import { REM } from '../../../styles/scale';
 
 /**
  * Props
@@ -122,6 +122,7 @@ export default class HomeScreen extends Component<Props, State> {
         <ScrollView showsVerticalScrollIndicator={false}
           contentContainerStyle={styles.container}
         >
+          <ImageBackground style={styles.bannerContainer} resizeMode='contain' source={images.emblem_v1} />
           <ImageBackground style={styles.bannerContainer} resizeMode='contain' source={images.logo_v1} />
           <ImageBackground style={styles.bannerContainer} resizeMode='contain' source={images.logo_v2} />
           <ImageBackground style={styles.bannerContainer} resizeMode='contain' source={images.logo_v3} />

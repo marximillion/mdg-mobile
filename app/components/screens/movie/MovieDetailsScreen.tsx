@@ -1,7 +1,10 @@
 /**
- * Imports
+ * Copyright © MJDG 2026
  */
 
+/**
+ * Imports
+ */
 import { Component, ReactNode } from 'react';
 import { Platform, SafeAreaView, StyleSheet, Text } from 'react-native';
 import { StackNavigationProp } from '@react-navigation/stack';

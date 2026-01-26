@@ -1,7 +1,10 @@
 /**
- * Imports
+ * Copyright © MJDG 2026
  */
 
+/**
+ * Imports
+ */
 import { APIPayload } from '../../APIPayload';
 import { CustomError as Error } from '../model/Error';
 import Movie from '../model/Movie';

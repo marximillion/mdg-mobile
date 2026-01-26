@@ -1,5 +1,5 @@
 /**
- * Copyright © 2025 - Homewood Health Inc.
+ * Copyright © MJDG 2026
  */
 
 /**

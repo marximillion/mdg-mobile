@@ -1,14 +1,14 @@
 /**
- * Copyright (c) MDG 2025.
+ * Copyright © MJDG 2026
  */
 
 /**
  * Imports
  */
-import { HomeProps } from '../components/screens/HomeScreen';
+import { HomeProps } from '../components/screens/common/HomeScreen';
 import { MovieDetailsProps } from '../components/screens/movie/MovieDetailsScreen';
 import { ProfileProps } from '../components/screens/practice/ProfileScreen';
-import { SimpleWebviewProps } from '../components/screens/SimpleWebViewScreen';
+import { SimpleWebviewProps } from '../components/screens/common/SimpleWebViewScreen';
 import { TutorialProps } from '../components/screens/practice/TutorialScreen';
 
 /**

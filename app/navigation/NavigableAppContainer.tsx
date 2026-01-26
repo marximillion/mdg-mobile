@@ -1,5 +1,5 @@
 /**
- * Copyright (c) MDG 2025.
+ * Copyright © MJDG 2026
  */
 
 /**
@@ -8,13 +8,13 @@
 import CarScreen from '../components/screens/car/CarScreen';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
-import HomeScreen from '../components/screens/HomeScreen';
+import HomeScreen from '../components/screens/common/HomeScreen';
 import InfoScreen from '../components/screens/practice/InfoScreen';
 import MovieScreen from '../components/screens/movie/MovieScreen';
 import { NavigationContainer } from '@react-navigation/native';
 import PracticeScreen from '../components/screens/practice/PracticeScreen';
 import ProfileScreen from '../components/screens/practice/ProfileScreen';
-import SimpleWebViewScreen from '../components/screens/SimpleWebViewScreen';
+import SimpleWebViewScreen from '../components/screens/common/SimpleWebViewScreen';
 import { StackParamList } from './StackParamList';
 import TutorialScreen from '../components/screens/practice/TutorialScreen';
 import GameScreen from '../components/screens/game/GameScreen';

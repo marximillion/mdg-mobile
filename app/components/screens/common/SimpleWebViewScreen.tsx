@@ -1,8 +1,11 @@
 /**
- * Imports
+ * Copyright © MJDG 2026
  */
 
-import { GlobalStyles } from '../../styles/GlobalStyles';
+/**
+ * Imports
+ */
+import { GlobalStyles } from '../../../styles/GlobalStyles';
 import React, { Component, ReactNode } from 'react';
 import { RouteProp } from '@react-navigation/native';
 import {
@@ -13,7 +16,7 @@ import {
   View
 } from 'react-native';
 import { StackNavigationProp } from '@react-navigation/stack';
-import { StackParamList } from '../../navigation/StackParamList';
+import { StackParamList } from '../../../navigation/StackParamList';
 import WebView, { WebViewNavigation } from 'react-native-webview';
 
 /**
