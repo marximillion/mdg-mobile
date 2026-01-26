@@ -2,5 +2,14 @@
   "extends": "@react-native/typescript-config",
   "compilerOptions": {
     "outDir": "./outDir"
-  }
+  },
+
+  "include": [
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+
+  "exclude": [
+    "node_modules",
+  ]
 }
